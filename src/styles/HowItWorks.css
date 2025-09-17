@@ -1,0 +1,33 @@
+.how-it-works {
+  padding: 4rem 8%;
+  /* background: #f9fafb; */
+  background: #f9f5f5;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.step {
+  background: #ffffff;
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(94, 4, 4, 0.05);
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  background: #2563eb;
+  color: #fff;
+}
