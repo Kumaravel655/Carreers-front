@@ -10,11 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+    "axios": "^1.12.2",
+    "bootstrap": "^5.3.8",
+    "framer-motion": "^12.23.13",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+=======
     "@react-oauth/google": "^0.12.2",
     "framer-motion": "^12.23.13",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
+>>>>>>> 86f8b0c4c200fcea726a0eee7181440a08933e81
     "react-router-dom": "^7.9.1"
   },
   "devDependencies": {
