@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const StepCompanyInfo = ({ nextStep }) => {
   const [logo, setLogo] = useState(null);
   const [banner, setBanner] = useState(null);

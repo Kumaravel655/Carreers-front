@@ -1,7 +1,30 @@
+
 import ApplyStatus from "./component/Applystatus/Applystatus";
 import ForgetPassword from "./component/ForgetPassword/ForgetPassword";
 import Login from "./component/Login/Login";
 import Signup from "./component/Signup/Signup";
+
+
+import { useState } from "react";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./component/LoginandSingup/Login";
+import Signup from "./component/LoginandSingup/Signup";
+import ForgetPassword from "./component/LoginandSingup/Password";
+
+
+
+import CompanyProfile from "./Components/CompanyProfile/CompanyProfile";
+import JobForm from "./Components/JobPosting/JobForm";
+import JobPosting from "./Components/JobPosting/JobPosting";
+
+
+
+
+
+
 import Home from "./pages/Home";
 import "./styles/global.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
