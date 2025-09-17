@@ -1,12 +1,11 @@
 import React from 'react';
 import Header from '../components/common/Header';
 import Sidebar from '../components/common/Sidebar';
-import JobAlertsList from '../Components/favoriteJobs/FavoriteJobsList';
+import JobAlertsList from '../components/jobAlerts/JobAlertsList';
 import Pagination from '../components/common/Pagination';
 import styles from '../styles/jobAlerts.module.css';
 
 const JobAlertsPage = () => {
-  // Sample data to simulate an API response for job alerts
   const jobAlertsData = [
     {
       id: 1,
@@ -41,7 +40,6 @@ const JobAlertsPage = () => {
       daysRemaining: '4 Days Remaining',
       status: 'active',
     },
-    // ... add more data to match the image
   ];
 
   return (

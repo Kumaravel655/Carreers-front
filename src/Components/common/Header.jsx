@@ -13,14 +13,30 @@ const Header = () => {
   };
 
   const clearNotifications = () => {
-    // In a real app, this would be an API call
     console.log('Clearing all notifications...');
     setShowNotifications(false);
   };
 
   return (
     <nav className={styles.navbar}>
-      {/* ... (existing code for left and center sections) ... */}
+      <div className={styles.leftSection}>
+        <img src="/path/to/jobpilot-logo.png" alt="Jobpilot Logo" className={styles.logo} />
+        <div className={styles.navLinks}>
+          <a href="#" className={styles.navItem}>Home</a>
+          <a href="#" className={styles.navItem}>Find Job</a>
+          <a href="#" className={styles.navItem}>Find Employers</a>
+          <a href="#" className={`${styles.navItem} ${styles.active}`}>Dashboard</a>
+          <a href="#" className={styles.navItem}>Job Alerts</a>
+          <a href="#" className={styles.navItem}>Customer Supports</a>
+        </div>
+      </div>
+      
+      <div className={styles.centerSection}>
+        <div className={styles.searchBox}>
+          <FaSearch className={styles.searchIcon} />
+          <input type="text" placeholder="Job title, keyword, company" />
+        </div>
+      </div>
 
       <div className={styles.rightSection}>
         <div className={styles.userInfo}>
@@ -33,7 +49,6 @@ const Header = () => {
           <FaAngleDown />
         </div>
         
-        {/* The new notification bell with a badge */}
         <div className={styles.notificationBell} onClick={toggleNotifications}>
           <FaBell className={styles.notificationIcon} />
           {notificationCount > 0 && <span className={styles.badge}>{notificationCount}</span>}
