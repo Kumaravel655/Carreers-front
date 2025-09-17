@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Standard User & General Pages
 import Login from "./component/LoginandSingup/Login";
@@ -14,7 +15,6 @@ import FavoriteJobsPage from "./pages/FavoriteJobsPage";
 import JobAlertsPage from "./pages/JobAlertsPage";
 import SettingsPage from "./pages/SettingsPage";
 
-
 // Recruiter Pages
 import RecruiterLoginPage from './Pages/RecruiterLoginPage/RecruiterLoginPage';
 import ForgotPasswordPage from './Pages/ForgotPasswordPage/ForgotPasswordPage';
@@ -25,7 +25,9 @@ import CompanyProfile from "./Components/CompanyProfile/CompanyProfile";
 import JobForm from "./Components/JobPosting/JobForm";
 import JobPosting from "./Components/JobPosting/JobPosting";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// Other Pages from your branches
+import ApplyStatus from "./component/Applystatus/Applystatus";
+
 import "./styles/global.css";
  
 function App() {
@@ -34,24 +36,25 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         
-        {/* All your main task pages */}
+        {/* Main Task Pages */}
         <Route path="/dashboard" element={<DashboardPage />} /> 
         <Route path="/applied-jobs" element={<AppliedJobsPage />} />
         <Route path="/favorite-jobs" element={<FavoriteJobsPage />} />
         <Route path="/job-alerts" element={<JobAlertsPage />} />
         <Route path="/settings" element={<SettingsPage />} />
 
-        {/* Other Routes */}
+        {/* Other Application Pages */}
         <Route path="/job-posting" element={<JobPosting />} />
         <Route path="/job-form" element={<JobForm />} />
         <Route path="/company-profile" element={<CompanyProfile />} />
+        <Route path="/applystatus" element={<ApplyStatus />} />
 
         {/* Standard User Routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/password" element={<ForgetPassword />} />
 
-        {/* Recruiter Routes (assuming these are separate) */}
+        {/* Recruiter Routes */}
         <Route path="/recruiter/login" element={<RecruiterLoginPage />} />
         <Route path="/recruiter/forgot-password" element={<ForgotPasswordPage />} />
         <Route path="/recruiter/reset-password" element={<ResetPasswordPage />} />
