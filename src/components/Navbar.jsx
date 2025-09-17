@@ -14,8 +14,9 @@ const Navbar = () => {
       </ul>
       <div className="nav-actions">
         <Link to="/login">
-        <button className="btn-outline">SignIn</button></Link>
-        <button className="btn-primary">Post a Job</button>
+        <button className="btn btn-outline btn-dark">SignIn</button></Link>
+       
+        <Link to="/login"> <button className="btn btn-outline ">Post Job</button></Link>
       </div>
     </nav>
   );
