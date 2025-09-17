@@ -1,0 +1,95 @@
+.notificationBell {
+  position: relative;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff4d4f;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.popoverContainer {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
+  z-index: 50;
+  padding: 1.5rem;
+}
+
+.popoverHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.popoverHeader h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.popoverHeader button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.notificationList {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+
+.notificationItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #f0f2f5;
+  transition: background-color 0.2s;
+}
+
+.notificationItem:hover {
+  background-color: #f9f9f9;
+}
+
+.notificationIcon {
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+.notificationDetails {
+  flex-grow: 1;
+}
+
+.notificationDetails p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.notificationDetails span {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+.noNotifications {
+  text-align: center;
+  color: #888;
+  padding: 2rem;
+}

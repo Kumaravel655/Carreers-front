@@ -1,40 +1,40 @@
-
 import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
 import "./App.css";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// Standard User Pages
 import Login from "./component/LoginandSingup/Login";
 import Signup from "./component/LoginandSingup/Signup";
 import ForgetPassword from "./component/LoginandSingup/Password";
 
-
+// Other Pages
+import Home from "./pages/Home";
 import JobPosting from "./Components/JobPosting/JobPosting";
 
-
-
-import Home from "./pages/Home";
-import "./styles/global.css";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// Recruiter Pages (assuming these are separate)
 import RecruiterLoginPage from './Pages/RecruiterLoginPage/RecruiterLoginPage';
 import ForgotPasswordPage from './Pages/ForgotPasswordPage/ForgotPasswordPage';
 import ResetPasswordPage from './Pages/ResetPasswordPage/ResetPasswordPage';
+
+import "./styles/global.css";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element =  {<Home/>}/>
-        <Route path="/job-posting" element =  {<Home/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/job-posting" element={<JobPosting />} />
 
-        <Route path="/login" element={<RecruiterLoginPage />} />
-        <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-        <Route path="/reset-password" element={<ResetPasswordPage />} />
-
+        {/* Standard User Routes */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/password" element={<ForgetPassword />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
 
+        {/* Recruiter Routes (assuming a separate path) */}
+        <Route path="/recruiter/login" element={<RecruiterLoginPage />} />
+        <Route path="/recruiter/forgot-password" element={<ForgotPasswordPage />} />
+        <Route path="/recruiter/reset-password" element={<ResetPasswordPage />} />
 
       </Routes>
     </Router>
