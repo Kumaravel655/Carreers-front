@@ -1,0 +1,19 @@
+.stat-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.stat-card-title {
+    font-size: 0.875rem;
+    color: #6b7280; /* gray-500 */
+    margin: 0;
+}
+
+.stat-card-value {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1f2937; /* gray-800 */
+    margin-top: 0.5rem;
+}
