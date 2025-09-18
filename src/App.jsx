@@ -14,6 +14,7 @@ import JobAlertsPage from "./pages/JobAlertsPage";
 import FavoriteJobsPage from "./pages/FavoriteJobsPage";
 import SettingsPage from "./pages/SettingsPage";
 
+import Faq from "./Components/Faq/Faq";
 // --- Imports for the new Admin Module ---
 import AdminLayout from './Components/Admin/AdminLayout';
 import AdminLoginPage from './Pages/Admin/AdminLoginPage';
@@ -21,14 +22,13 @@ import AdminDashboardPage from './Pages/Admin/AdminDashboardPage';
 import ManageUsersPage from './Pages/Admin/ManageUsersPage';
 import ManageJobsPage from './Pages/Admin/ManageJobsPage';
 import ReportsPage from './Pages/Admin/ReportsPage';
-import AdminSettingsPage from './Pages/Admin/SettingsPage'; // Renamed to avoid conflict
+import AdminSettingsPage from './Pages/Admin/SettingsPage'; 
 import SupportPage from './Pages/Admin/SupportPage';
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* === Your Existing Application Routes === */}
         <Route path="/" element={<Home />} />
         <Route path="/findjob" element={<FindJob />} />
         <Route path="/jobs/:jobId" element={<JobDesc />} />
@@ -39,10 +39,8 @@ function App() {
         <Route path="/job-alerts" element={<JobAlertsPage />} />
         <Route path="/favorite-jobs" element={<FavoriteJobsPage />} />
         <Route path="/settings" element={<SettingsPage />} />
-
-        {/* === New Admin Module Routes === */}
+        <Route path="/faq" element={<Faq />} />
         <Route path="/login/admin" element={<AdminLoginPage />} />
-        
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<Navigate to="/admin/dashboard" replace />} /> 
           <Route path="dashboard" element={<AdminDashboardPage />} />
