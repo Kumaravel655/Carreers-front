@@ -1,0 +1,32 @@
+.reports-page h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* A grid to organize our charts and stats */
+.reports-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to one column on mobile */
+    gap: 1.5rem;
+}
+
+/* On larger screens, use two columns */
+@media (min-width: 1024px) {
+    .reports-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.chart-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
