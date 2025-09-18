@@ -77,7 +77,7 @@ const FindJob = () => {
       <nav className="page-header">
         Find Job
         <div>
-          <a href="/">Home</a> / <i>Find Job</i>
+          <a href="/job-seeker/">Home</a> / <i>Find Job</i>
         </div>
       </nav>
 

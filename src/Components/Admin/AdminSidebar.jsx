@@ -6,7 +6,7 @@ const AdminSidebar = () => {
     const navigate = useNavigate();
 
     const handleLogout = () => {
-        navigate('/login/admin');
+        navigate('/');
     };
 
     return (

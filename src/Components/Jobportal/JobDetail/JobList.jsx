@@ -17,7 +17,7 @@ const JobList = ({ jobsToDisplay = [], bookmarkedJobs = new Set(), onToggleBookm
 
         return (
           <Link
-            to={`/jobs/${jobItem.id}`}
+            to={`/job-seeker/jobs/${jobItem.id}`}
             key={jobItem.id}
             className="job-card-link"
           >

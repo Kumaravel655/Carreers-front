@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../styles/sidebar.module.css';
 import { FaTachometerAlt, FaBriefcase, FaBookmark, FaBell, FaCog, FaSignOutAlt } from 'react-icons/fa';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, Navigate } from 'react-router-dom';
 
 const Sidebar = () => {
   const location = useLocation(); // Get the current URL location
@@ -10,40 +10,41 @@ const Sidebar = () => {
     <nav className={styles.sidebar}>
       <div className={styles.sectionTitle}>CANDIDATE DASHBOARD</div>
       <ul className={styles.menu}>
-        <li className={`${styles.menuItem} ${location.pathname === '/dashboard' ? styles.active : ''}`}>
-          <Link to="/dashboard">
+        <li className={`${styles.menuItem} ${location.pathname === '/job-seeker/dashboard' ? styles.active : ''}`}>
+          <Link to="/job-seeker/dashboard">
             <FaTachometerAlt />
             <span>Overview</span>
           </Link>
         </li>
-        <li className={`${styles.menuItem} ${location.pathname === '/applied-jobs' ? styles.active : ''}`}>
-          <Link to="/applied-jobs">
+        <li className={`${styles.menuItem} ${location.pathname === '/job-seeker/applied-jobs' ? styles.active : ''}`}>
+          <Link to="/job-seeker/applied-jobs">
             <FaBriefcase />
             <span>Applied Jobs</span>
           </Link>
         </li>
-        <li className={`${styles.menuItem} ${location.pathname === '/favorite-jobs' ? styles.active : ''}`}>
-          <Link to="/favorite-jobs">
+        <li className={`${styles.menuItem} ${location.pathname === '/job-seeker/favorite-jobs' ? styles.active : ''}`}>
+          <Link to="/job-seeker/favorite-jobs">
             <FaBookmark />
             <span>Favorite Jobs</span>
           </Link>
         </li>
-        <li className={`${styles.menuItem} ${location.pathname === '/job-alerts' ? styles.active : ''}`}>
-          <Link to="/job-alerts">
+        <li className={`${styles.menuItem} ${location.pathname === '/job-seeker/job-alerts' ? styles.active : ''}`}>
+          <Link to="/job-seeker/job-alerts">
             <FaBell />
             <span>Job Alert</span>
             <span className={styles.badge}>09</span>
           </Link>
         </li>
-        <li className={`${styles.menuItem} ${location.pathname === '/settings' ? styles.active : ''}`}>
-          <Link to="/settings">
+        <li className={`${styles.menuItem} ${location.pathname === '/job-seeker/settings' ? styles.active : ''}`}>
+          <Link to="/job-seeker/settings">
             <FaCog />
             <span>Settings</span>
           </Link>
         </li>
+        <li><Link to = "/job-seeker/findjob"><button className='btn btn-primary'>Find Jobs</button></Link></li>
       </ul>
       <div className={styles.logout}>
-        <Link to="/logout">
+        <Link to="/">
           <FaSignOutAlt />
           <span>Log-out</span>
         </Link>

@@ -40,7 +40,7 @@ const JobDesc = () => {
       <nav>
         Job Details
         <div>
-          <Link to="/">Home</Link>/<Link to="/findjob">Jobs</Link> /{" "}
+          <Link to="/job-seeker/">Home</Link>/<Link to="/job-seeker/findjob">Jobs</Link> /{" "}
           <i>Job Details</i>
         </div>
       </nav>
@@ -83,7 +83,7 @@ const JobDesc = () => {
         <h3 className="text-center mb-4">Related Jobs</h3>
         <JobList jobsToDisplay={relatedJobs.slice(0, 3)} />
         <div className="text-center mt-4 mb-5">
-          <Link to="/findjob" className="btn btn-primary">
+          <Link to="/job-seeker/findjob" className="btn btn-primary">
             View All Jobs &rarr;
           </Link>
         </div>

@@ -4,24 +4,22 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="logo">JobPilot</div>
-      <ul className="nav-links">
+    <nav className="d-flex justify-content-between  align-items-center px-5 navbar">
+      <div className="llo">JobPilot</div>
+      <ul className="nav-links1">
         <li>Home</li>
-        <li><Link to="/findjob">Jobs</Link></li>
+        <li><Link to="/job-seeker/findjob">Jobs</Link></li>
         <li>
-          <Link to="/dashboard">Candidates</Link>
+          <Link to="/job-seeker/dashboard">Dashboard</Link>
         </li>
-        <li><Link to = "/employee-prof">Employee</Link></li>
-        <li>Companies</li>
-        <li>About</li>
+         <li>
+          <Link to="/job-seeker/support">Support</Link>
+        </li>
+        <li>
+          <Link to="/job-seeker/faq">FAQ</Link>
+        </li>
+
       </ul>
-      <div className="nav-actions">
-        <Link to="/recruiter-login">
-        <button className="btn btn-outline btn-dark">SignIn</button></Link>
-       
-        <Link to="/login"> <button className="btn btn-outline ">Post Job</button></Link>
-      </div>
     </nav>
   );
 };
