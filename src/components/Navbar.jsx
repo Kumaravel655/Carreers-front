@@ -12,11 +12,12 @@ const Navbar = () => {
         <li>
           <Link to="/dashboard">Candidates</Link>
         </li>
+        <li><Link to = "/employee-prof">Employee</Link></li>
         <li>Companies</li>
         <li>About</li>
       </ul>
       <div className="nav-actions">
-        <Link to="/login">
+        <Link to="/recruiter-login">
         <button className="btn btn-outline btn-dark">SignIn</button></Link>
        
         <Link to="/login"> <button className="btn btn-outline ">Post Job</button></Link>
