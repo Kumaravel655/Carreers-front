@@ -31,6 +31,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RecruiterLoginPage from './Pages/RecruiterLoginPage/RecruiterLoginPage';
 import ForgotPasswordPage from './Pages/ForgotPasswordPage/ForgotPasswordPage';
 import ResetPasswordPage from './Pages/ResetPasswordPage/ResetPasswordPage';
+import Findcandidate from "./component/Findcandidate";
+import Reqnotification from "./component/Reqnotification";
 
 function App() {
   return (
@@ -47,6 +49,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
              <Route path="/Applystatus" element={<ApplyStatus />} />
+             <Route path="/Findcandidate" element={<Findcandidate />} />
+             <Route path="/signup" element={<Reqnotification />} />
              
 
 
