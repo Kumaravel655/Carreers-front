@@ -1,0 +1,42 @@
+.status-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.status-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.status-card:hover {
+    transform: translateY(-5px);
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.status.pending {
+    background-color: #ff9800;
+}
+
+.status.reviewed {
+    background-color: #2196f3;
+}
+
+.status.accepted {
+    background-color: #4caf50;
+}
+
+.status.rejected {
+    background-color: #f44336;
+}

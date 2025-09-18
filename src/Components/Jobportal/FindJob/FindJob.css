@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
-/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -15,13 +14,12 @@ nav a,
   color: inherit;
 }
 
-/* Header */
 .find-job-page .page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 7%;
-  background-color: #f8f9fa;
+  background-color: #a3a3a3;
   border-bottom: 1px solid #e9ecef;
 }
 
@@ -29,15 +27,13 @@ nav a,
   color: #333;
 }
 
-/* Page Container */
 .page-body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Search Bar */
-.search-bar {
+.find-job-page .search-bar {
   display: flex;
   align-items: stretch;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -48,23 +44,23 @@ nav a,
   overflow: hidden;
 }
 
-.search-input {
+.find-job-page .search-input {
   flex: 1;
   display: flex;
   align-items: center;
   padding-left: 15px;
 }
 
-.search-input:first-child {
+.find-job-page .search-input:first-child {
   border-right: 1px solid #dee2e6;
 }
 
-.search-input i {
+.find-job-page .search-input i {
   color: #6c757d;
   margin-right: 10px;
 }
 
-.search-input input {
+.find-job-page .search-input input {
   width: 100%;
   border: none;
   padding: 16px 10px;
@@ -73,27 +69,24 @@ nav a,
   outline: none;
 }
 
-/* Filter Button */
-.filter-btn {
+.find-job-page .filter-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   padding: 0 25px;
   border: none;
-  background-color: #f8f9fa;
-  color: #343a40;
+  background-color: #222222;
   font-weight: 500;
   cursor: pointer;
   border-left: 1px solid #dee2e6;
   transition: background-color 0.2s;
 }
 
-.filter-btn:hover {
-  background-color: #e9ecef;
+.find-job-page .filter-btn:hover {
+  background-color: #616161;
 }
 
-/* Job Cards Grid */
 .job-cards {
   display: flex;
   flex-wrap: wrap;
@@ -123,7 +116,6 @@ nav a,
   margin-bottom: 8px;
 }
 
-/* Job Type Badge */
 .jtype {
   font-size: 0.75rem;
   color: #0d6efd;
@@ -136,14 +128,12 @@ nav a,
   display: inline-block;
 }
 
-/* Salary */
 .sal {
   font-size: 0.9rem;
   color: #6c757d;
   margin-bottom: 8px;
 }
 
-/* Company Info */
 .company-info {
   display: flex;
   align-items: center;
@@ -163,7 +153,6 @@ nav a,
   object-fit: cover;
 }
 
-/* Card Footer */
 .jbtm {
   display: flex;
   justify-content: space-between;
@@ -171,7 +160,6 @@ nav a,
   margin-top: 16px;
 }
 
-/* No Jobs Found */
 .no-jobs-found {
   text-align: center;
   padding: 50px;
@@ -179,7 +167,6 @@ nav a,
   font-size: 1.1rem;
 }
 
-/* Pagination */
 .pagination {
   display: flex;
   justify-content: center;
@@ -216,9 +203,6 @@ nav a,
   border-color: #dee2e6;
 }
 
-/* =====================
-   Responsive Fixes
-===================== */
 @media (max-width: 992px) {
   .find-job-page .page-header {
     flex-direction: column;
@@ -246,7 +230,7 @@ nav a,
     padding: 12px;
     border-right: none;
     border-bottom: 1px solid #dee2e6;
-    max-height:50px;
+    max-height: 50px;
   }
 
   .filter-btn {

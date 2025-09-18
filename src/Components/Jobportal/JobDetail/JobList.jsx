@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./JobList.css";
 
-// The only change is adding `= new Set()` as a default for bookmarkedJobs
 const JobList = ({ jobsToDisplay = [], bookmarkedJobs = new Set(), onToggleBookmark }) => {
 
   const handleBookmarkClick = (e, jobId) => {
