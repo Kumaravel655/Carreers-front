@@ -1,0 +1,85 @@
+
+
+
+.notification-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Bell button */
+.bell-btn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.badge {
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}
+
+/* Dropdown aligned to the RIGHT */
+.dropdown {
+  position: absolute;
+  right: 0;   /* Align to right */
+  top: 35px;  /* Slightly below the bell */
+  width: 320px;   /* Wider for full view */
+  max-height: 400px;  /* Scroll if too many */
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  z-index: 1000;
+  padding: 12px;
+}
+
+.dropdown h4 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+.notification-item {
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.notification-item.unread {
+  background: #f0f6ff;
+  font-weight: bold;
+}
+
+.notification-item.read {
+  background: #fafafa;
+  color: #555;
+}
+
+.notification-item:hover {
+  background: #e9f1ff;
+}
+
+.notification-item span {
+  display: block;
+  font-size: 12px;
+  color: gray;
+  margin-top: 4px;
+}
+
+.empty {
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+  padding: 20px;
+}

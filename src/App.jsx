@@ -24,7 +24,7 @@ import SettingsPage from "./Components/Employee/EmployeePages/Pages/SettingsPage
 import Faq from "./Components/Employee/EmployeePages/Faq/Faq";
 import SupportTicketSystem from "./Components/Employee/EmployeePages/SupportTicketSystem/SupportTicketSystem";
 import NotificationsPage from "./Components/Employee/EmployeeComponents/NotificationPage";
-import ProfilePage from  "./Components/Employee/EmployeePages/dashboard/Profile"
+import ProfilePage from "./Components/Employee/EmployeePages/dashboard/Profile";
 
 // Admin imports
 import AdminLayout from "./Components/Admin/AdminComponents/AdminLayout";
@@ -35,6 +35,20 @@ import ManageJobsPage from "./Components/Admin/AdminPages/ManageJobsPage";
 import ReportsPage from "./Components/Admin/AdminPages/ReportsPage";
 import AdminSettingsPage from "./Components/Admin/AdminPages/SettingsPage";
 import SupportPage from "./Components/Admin/AdminPages/SupportPage";
+
+import CompanyProfile from "./Components/CompanyProfile/CompanyProfile";
+import JobForm from "./Components/JobPosting/JobForm";
+import JobPosting from "./Components/JobPosting/JobPosting";
+
+import Home from "./pages/Home";
+import "./styles/global.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RecruiterLoginPage from "./Pages/RecruiterLoginPage/RecruiterLoginPage";
+import ForgotPasswordPage from "./Pages/ForgotPasswordPage/ForgotPasswordPage";
+import ResetPasswordPage from "./Pages/ResetPasswordPage/ResetPasswordPage";
+import Findcandidate from "./component/Findcandidate";
+import Reqnotification from "./component/Reqnotification";
+import Shortlist from "./component/Shortlist";
 
 // Recruiter imports
 import RecuriterHome from "./Components/Recuriter/RecuriterHome";
@@ -49,6 +63,14 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
 
+        <Route path="/password" element={<ForgetPassword />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/Applystatus" element={<ApplyStatus />} />
+        <Route path="/Findcandidate" element={<Findcandidate />} />
+        <Route path="/Reqnotificaton" element={<Reqnotification />} />
+        <Route path="/Shortlist" element={<Shortlist />} />
+
         {/* Job Seeker */}
         <Route path="/job-seeker">
           <Route index element={<Home />} />
@@ -62,9 +84,9 @@ function App() {
           <Route path="jobs/:jobId/apply-job" element={<ApplyJob />} />
           <Route path="support" element={<SupportTicketSystem />} />
           <Route path="faq" element={<Faq />} />
-          <Route path="notifications" element={<NotificationsPage/>} />
+          <Route path="notifications" element={<NotificationsPage />} />
           <Route path="profilepage" element={<ProfilePage />} />
-           
+          =======
           {/* <Route path=""/> */}
         </Route>
 
