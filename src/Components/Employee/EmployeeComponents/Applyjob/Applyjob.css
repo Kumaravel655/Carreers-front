@@ -1,0 +1,145 @@
+/* ApplyJob.css */
+
+/* Main container styles */
+.apply-job-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.apply-job-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+.apply-job-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-job-form label {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+.apply-job-form input,
+.apply-job-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.apply-job-form input[type="file"] {
+  padding: 3px;
+}
+
+.apply-job-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.apply-job-form button:hover {
+  background-color: #0056b3;
+}
+
+/* --- New Styles for the Confirmation Page --- */
+.confirmation-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.confirmation-page h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.confirmation-details {
+  text-align: left;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.confirmation-details p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.confirmation-details p strong {
+  color: #333;
+}
+
+.confirmation-details a {
+  display: inline-block;
+  margin-top: 5px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.confirmation-details a:hover {
+  text-decoration: underline;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.back-button {
+  background-color: #6c757d;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  flex: 1;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  flex: 1;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}

@@ -1,19 +1,40 @@
-
-import ApplyStatus from "./component/Applystatus/Applystatus";
-import ForgetPassword from "./component/ForgetPassword/ForgetPassword";
-import Login from "./component/Login/Login";
-import Signup from "./component/Signup/Signup";
-
-
-import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./component/LoginandSingup/Login";
-import Signup from "./component/LoginandSingup/Signup";
-import ForgetPassword from "./component/LoginandSingup/Password";
 
+// Login signup -> common
+import Login from "./Components/Shared/LoginandSingup/Login";
+import Signup from "./Components/Shared/LoginandSingup/Signup";
+
+// job seekers
+import Home from "./Components/Employee/EmployeeComponents/Home";
+import FindJob from "./Components/Employee/EmployeePages/Jobportal/FindJob/FindJob";
+import ApplyJob from "./Components/Employee/EmployeeComponents/Applyjob/Applyjob";
+import JobDesc from "./Components/Employee/EmployeePages/Jobportal/JobDetail/JobDesc";
+import DashboardPage from "./Components/Employee/EmployeePages/dashboard/DashboardPage";
+import AppliedJobsPage from "./Components/Employee/EmployeePages/Pages/AppliedJobsPage";
+import JobAlertsPage from "./Components/Employee/EmployeeComponents/jobAlerts/JobAlertsPage";
+import FavoriteJobsPage from "./Components/Employee/EmployeeComponents/favoriteJobs/FavoriteJobsPage";
+import SettingsPage from "./Components/Employee/EmployeePages/Pages/SettingsPage";
+import Faq from "./Components/Employee/EmployeePages/Faq/Faq";
+import SupportTicketSystem from "./Components/Employee/EmployeePages/SupportTicketSystem/SupportTicketSystem";
+import NotificationsPage from "./Components/Employee/EmployeeComponents/NotificationPage";
+
+
+// Admin imports
+import AdminLayout from "./Components/Admin/AdminComponents/AdminLayout";
+import AdminLoginPage from "./Components/Admin/AdminPages/AdminLoginPage";
+import AdminDashboardPage from "./Components/Admin/AdminPages/AdminDashboardPage";
+import ManageUsersPage from "./Components/Admin/AdminPages/ManageUsersPage";
+import ManageJobsPage from "./Components/Admin/AdminPages/ManageJobsPage";
+import ReportsPage from "./Components/Admin/AdminPages/ReportsPage";
+import AdminSettingsPage from "./Components/Admin/AdminPages/SettingsPage";
+import SupportPage from "./Components/Admin/AdminPages/SupportPage";
 
 
 import CompanyProfile from "./Components/CompanyProfile/CompanyProfile";
@@ -35,16 +56,20 @@ import Findcandidate from "./component/Findcandidate";
 import Reqnotification from "./component/Reqnotification";
 import Shortlist from "./component/Shortlist";
 
+// Recruiter imports
+import RecuriterHome from "./Components/Recuriter/RecuriterHome";
+
+
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element =  {<Home/>}/>
-        <Route path="/job-posting" element =  {<Home/>}/>
+        {/* <Route path="/" element={<Home />} /> */}
 
-        <Route path="/login" element={<RecruiterLoginPage />} />
-        <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-        <Route path="/reset-password" element={<ResetPasswordPage />} />
+        {/* Login and Sign-up */}
+        <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+
 
         <Route path="/password" element={<ForgetPassword />} />
             <Route path="/login" element={<Login />} />
@@ -55,12 +80,42 @@ function App() {
               <Route path="/Shortlist" element={<Shortlist />} />
              
 
+        {/* Job Seeker */}
+        <Route path="/job-seeker">
+          <Route index element={<Home />} />
+          <Route path="dashboard" element={<DashboardPage />} />
+          <Route path="applied-jobs" element={<AppliedJobsPage />} />
+          <Route path="job-alerts" element={<JobAlertsPage />} />
+          <Route path="settings" element={<SettingsPage />} />
+          <Route path="favorite-jobs" element={<FavoriteJobsPage />} />
+          <Route path="findjob" element={<FindJob />} />
+          <Route path="jobs/:jobId" element={<JobDesc />} />
+          <Route path="jobs/:jobId/apply-job" element={<ApplyJob />} />
+          <Route path="support" element={<SupportTicketSystem />} />
+          <Route path="faq" element={<Faq />} />
+          <Route path="notifications" element={<NotificationsPage/>} />
 
 
+          {/* <Route path=""/> */}
+        </Route>
+
+        {/* Recruiter */}
+        <Route path="/recruit" element={<RecuriterHome />} />
+
+        {/* Admin */}
+
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<Navigate to="/admin/dashboard" replace />} />
+          <Route path="dashboard" element={<AdminDashboardPage />} />
+          <Route path="manage-users" element={<ManageUsersPage />} />
+          <Route path="manage-jobs" element={<ManageJobsPage />} />
+          <Route path="reports" element={<ReportsPage />} />
+          <Route path="settings" element={<AdminSettingsPage />} />
+          <Route path="support" element={<SupportPage />} />
+        </Route>
       </Routes>
     </Router>
   );
-
 }
 
 export default App;
