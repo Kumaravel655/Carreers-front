@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import { login } from "../../services/authService";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Auth.css";
+
+// This is a dummy login function. In a real app, this would be an API call.
+// It uses the provided JSON data to simulate authentication.
+const login = async (email, password, role) => {
+  const response = await fetch('/users.json');
+  const users = await response.json();
+  
+  const user = users.find(u => u.email === email && u.password === password && u.role === role);
+  return user;
+};
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -17,9 +26,14 @@ const Login = () => {
     if (user) {
       localStorage.setItem("user", JSON.stringify(user));
 
-      if (role === "Admin") navigate("/admin-dashboard");
-      else if (role === "Recruiter") navigate("/recruiter-dashboard");
-      else navigate("job-seeker/dashboard");
+      // Redirect based on the selected role using the correct paths
+      if (role === "Admin") {
+        navigate("/admin");
+      } else if (role === "Recruiter") {
+        navigate("/recruit");
+      } else if (role === "Job Seeker") {
+        navigate("/job-seeker");
+      }
     } else {
       alert("Invalid credentials!");
     }

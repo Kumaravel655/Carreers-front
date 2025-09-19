@@ -1,0 +1,116 @@
+/* Base styling for the hero section container */
+.hero-section {
+  padding: 100px 20px; /* Increased padding for more vertical space */
+  text-align: center;
+}
+
+/* Main content area */
+.hero-content {
+  max-width: 900px; /* Increased max-width for a more expansive feel */
+  margin: 0 auto;
+}
+
+/* Heading and paragraph */
+.hero-content h1 {
+  font-size: 52px; /* Slightly larger font for impact */
+  font-weight: 800; /* Bolder font weight */
+  color: #212529; /* Darker, more professional color */
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #6c757d; /* Softer, more readable gray */
+  margin-top: 20px;
+  max-width: 650px; /* Adjusted max-width for better line length */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Statistics list */
+.stats-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Reduced gap for a tighter look */
+  margin-top: 50px; /* Increased top margin for more separation */
+}
+
+.stat-item {
+  background-color: #f8f9fa;
+  border-radius: 12px; /* Slightly more rounded corners */
+  padding: 25px 35px; /* Increased padding for a larger hit area */
+  text-align: left;
+  min-width: 200px; /* Ensure a consistent minimum width */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  transition: transform 0.3s ease-in-out;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px); /* Add a slight lift effect on hover */
+}
+
+.stat-value {
+  display: block;
+  font-size: 32px; /* Larger font size for the number */
+  font-weight: 700;
+  color: #007bff;
+}
+
+.stat-label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Company logos */
+.company-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows logos to wrap to the next line on smaller screens */
+  gap: 60px; /* Increased gap for better logo visibility */
+  margin-top: 80px;
+  align-items: center;
+}
+
+.company-logos img {
+  height: 40px;
+  opacity: 0.5; /* Reduced opacity for a 'trusted partner' look */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.company-logos img:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 15px; /* Reduced padding on mobile */
+  }
+
+  .hero-content h1 {
+    font-size: 36px; /* Smaller font on mobile for readability */
+  }
+
+  .stats-list {
+    flex-direction: column; /* Stack stats vertically on mobile */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .stat-item {
+    width: 80%; /* Make stat items wider on mobile */
+    min-width: auto;
+    text-align: center;
+  }
+  
+  .stat-value, .stat-label {
+    text-align: center;
+  }
+
+  .company-logos {
+    gap: 40px; /* Smaller gap on mobile */
+    margin-top: 50px;
+  }
+}

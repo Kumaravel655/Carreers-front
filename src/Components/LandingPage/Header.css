@@ -1,0 +1,102 @@
+/* Base header container */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Lighter, more subtle shadow */
+  padding: 15px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px; /* A slightly wider container for more space */
+  margin: 0 auto;
+  padding: 0 40px; /* More generous padding on the sides */
+}
+
+/* Left and right sections */
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Consistent spacing between elements */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700; /* Using numeric font-weight for clarity */
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px; /* Reduced margin, using gap for spacing instead */
+}
+
+/* Navigation link */
+.nav-link {
+  color: #555;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Color change on hover for a better user experience */
+}
+
+/* Search box styling */
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  padding: 10px 15px;
+  padding-right: 40px; /* Space for the icon */
+  border: 1px solid #e0e0e0; /* Lighter border color */
+  border-radius: 8px; /* Slightly more rounded corners */
+  font-size: 14px;
+  width: 250px; /* A fixed width for consistency */
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+/* Base button styles */
+.btn {
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent; /* Add a transparent border to prevent layout shift on hover */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Specific button colors */
+.btn-signin {
+  background-color: transparent;
+  color: #007bff;
+}
+
+.btn-signin:hover {
+  background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+.btn-postjob {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.btn-postjob:hover {
+  background-color: #0056b3; /* A darker blue on hover */
+  border-color: #0056b3;
+}
+
+/* Adjustments for a more modern layout */
+.header-right {
+  gap: 15px; /* Use gap for spacing between the buttons */
+}

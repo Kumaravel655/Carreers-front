@@ -7,6 +7,9 @@ import {
 } from "react-router-dom";
 import "./App.css";
 
+// Import the new LandingPage component
+import LandingPage from "./Components/LandingPage/LandingPage";
+
 // Login signup -> common
 import Login from "./Components/Shared/LoginandSingup/Login";
 import Signup from "./Components/Shared/LoginandSingup/Signup";
@@ -28,7 +31,6 @@ import NotificationsPage from "./Components/Employee/EmployeeComponents/Notifica
 
 // Admin imports
 import AdminLayout from "./Components/Admin/AdminComponents/AdminLayout";
-import AdminLoginPage from "./Components/Admin/AdminPages/AdminLoginPage";
 import AdminDashboardPage from "./Components/Admin/AdminPages/AdminDashboardPage";
 import ManageUsersPage from "./Components/Admin/AdminPages/ManageUsersPage";
 import ManageJobsPage from "./Components/Admin/AdminPages/ManageJobsPage";
@@ -43,10 +45,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
+       
+        <Route path="/" element={<LandingPage />} />
 
-        {/* Login and Sign-up */}
-        <Route path="/" element={<Login />} />
+        
+        <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
 
         {/* Job Seeker */}
@@ -63,15 +66,12 @@ function App() {
           <Route path="support" element={<SupportTicketSystem />} />
           <Route path="faq" element={<Faq />} />
           <Route path="notifications" element={<NotificationsPage/>} />
-
-          {/* <Route path=""/> */}
         </Route>
 
         {/* Recruiter */}
         <Route path="/recruit" element={<RecuriterHome />} />
 
         {/* Admin */}
-
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<Navigate to="/admin/dashboard" replace />} />
           <Route path="dashboard" element={<AdminDashboardPage />} />

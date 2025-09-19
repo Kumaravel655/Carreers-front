@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "email": "jobseeker1@example.com",
+    "password": "password123",
+    "role": "Job Seeker"
+  },
+  {
+    "id": 2,
+    "email": "jobseeker2@example.com",
+    "password": "password123",
+    "role": "Job Seeker"
+  },
+  {
+    "id": 3,
+    "email": "jobseeker3@example.com",
+    "password": "password123",
+    "role": "Job Seeker"
+  },
+  {
+    "id": 4,
+    "email": "recruiter1@example.com",
+    "password": "recruiter123",
+    "role": "Recruiter"
+  },
+  {
+    "id": 5,
+    "email": "recruiter2@example.com",
+    "password": "recruiter123",
+    "role": "Recruiter"
+  },
+  {
+    "id": 6,
+    "email": "recruiter3@example.com",
+    "password": "recruiter123",
+    "role": "Recruiter"
+  },
+  {
+    "id": 7,
+    "email": "admin1@example.com",
+    "password": "admin123",
+    "role": "Admin"
+  },
+  {
+    "id": 8,
+    "email": "admin2@example.com",
+    "password": "admin123",
+    "role": "Admin"
+  },
+  {
+    "id": 9,
+    "email": "admin3@example.com",
+    "password": "admin123",
+    "role": "Admin"
+  },
+  {
+    "id": 10,
+    "email": "testuser@example.com",
+    "password": "testpassword",
+    "role": "Job Seeker"
+  }
+]
