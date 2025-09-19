@@ -4,6 +4,7 @@ import Sidebar from "../../EmployeeComponents/common/Sidebar";
 import AppliedJobsTable from "./AppliedJobsTable";
 import Pagination from "./Pagination";
 import styles from "./appliedJobs.module.css";
+import Navbar from "../../EmployeeComponents/Navbar";
 
 const AppliedJobsPage = () => {
   // Sample data to simulate an API response for applied jobs
@@ -91,7 +92,9 @@ const AppliedJobsPage = () => {
   ];
 
   return (
+
     <div className={styles.appliedJobsLayout}>
+      <Navbar />
       <Header />
       <div className={styles.mainContainer}>
         <Sidebar />

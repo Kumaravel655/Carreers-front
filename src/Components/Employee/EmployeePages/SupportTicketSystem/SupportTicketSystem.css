@@ -1,8 +1,12 @@
 .support-container {
-  max-width: 900px;
+  max-width: 500px;
   margin: 20px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+
+  border: solid s rgb(125, 129, 145) ;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(93, 89, 89, 0.1);
 }
 
 .title {
@@ -25,9 +29,11 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
+  margin: 15px;
 }
 
 .ticket-form button {
+  margin-left: 35%;
   background: #007bff;
   color: white;
   padding: 12px;
@@ -36,6 +42,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
+  width: 30%;
 }
 
 .ticket-form button:hover {

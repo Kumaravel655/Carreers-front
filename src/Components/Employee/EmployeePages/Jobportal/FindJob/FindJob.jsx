@@ -3,6 +3,7 @@ import "./FindJob.css";
 import JobList from "../JobDetail/JobList";
 import allJobs from "../JobDetail/jobs.json";
 import FilterSidebar from "./FilterSlidebar";
+import Navbar from "../../../EmployeeComponents/Navbar";
 const FindJob = () => {
   const initialFilters = {
     title: "",
@@ -74,12 +75,8 @@ const FindJob = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <div className="find-job-page">
-      <nav className="page-header">
-        Find Job
-        <div>
-          <a href="/job-seeker/">Home</a> / <i>Find Job</i>
-        </div>
-      </nav>
+      <Navbar/>
+      
 
       <div className="page-body">
         <div className="search-bar">

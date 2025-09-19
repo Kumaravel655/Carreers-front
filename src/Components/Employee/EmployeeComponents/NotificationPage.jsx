@@ -1,6 +1,7 @@
 // src/pages/NotificationsPage.jsx
 import React, { useState, useEffect } from 'react';
 import './NotificationsPage.css'
+import Navbar from './Navbar';
 const NotificationsPage = () => {
   const [notifications, setNotifications] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -26,7 +27,10 @@ const NotificationsPage = () => {
   }
 
   return (
+    <>
+    <Navbar/>
     <div className="notifications-container">
+      
       <h2>Notifications</h2>
       {notifications.length > 0 ? (
         <ul>
@@ -38,6 +42,7 @@ const NotificationsPage = () => {
         <p>No new notifications.</p>
       )}
     </div>
+    </>
   );
 };
 

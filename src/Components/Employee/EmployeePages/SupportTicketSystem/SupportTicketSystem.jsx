@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SupportTicketSystem.css";
+import Navbar from "../../EmployeeComponents/Navbar";
 
 const SupportTicketSystem = () => {
   const [tickets, setTickets] = useState([]);
@@ -29,6 +30,8 @@ const SupportTicketSystem = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="support-container">
       <h1 className="title">Support Ticket System</h1>
 
@@ -77,6 +80,7 @@ const SupportTicketSystem = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 

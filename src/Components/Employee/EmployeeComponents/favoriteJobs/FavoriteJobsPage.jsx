@@ -4,6 +4,7 @@ import Sidebar from "../common/Sidebar";
 import FavoriteJobsList from "./FavoriteJobsList";
 import Pagination from "../../EmployeePages/Pages/Pagination";
 import styles from "./favoriteJobs.module.css";
+import Navbar from "../Navbar";
 
 const FavoriteJobsPage = () => {
   // Sample data to simulate an API response for favorite jobs
@@ -57,6 +58,7 @@ const FavoriteJobsPage = () => {
 
   return (
     <div className={styles.favoriteJobsLayout}>
+      <Navbar/>
       <Header />
       <div className={styles.mainContainer}>
         <Sidebar />

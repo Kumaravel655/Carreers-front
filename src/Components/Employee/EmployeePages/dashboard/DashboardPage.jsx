@@ -5,6 +5,7 @@ import DashboardStats from "./DashboardStats";
 import ProfileCompletionAlert from "./ProfileCompletionAlert";
 import RecentApplicationsTable from "./RecentApplicationsTable";
 import styles from "./dashboard.module.css";
+import Navbar from "../../EmployeeComponents/Navbar";
 
 const DashboardPage = () => {
   // Sample data to pass to the components
@@ -39,6 +40,8 @@ const DashboardPage = () => {
   ];
 
   return (
+    <>
+    <Navbar />
     <div className={styles.dashboardLayout}>
       <Header />
       <div className={styles.mainContainer}>
@@ -57,6 +60,7 @@ const DashboardPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
