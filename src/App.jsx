@@ -24,7 +24,7 @@ import SettingsPage from "./Components/Employee/EmployeePages/Pages/SettingsPage
 import Faq from "./Components/Employee/EmployeePages/Faq/Faq";
 import SupportTicketSystem from "./Components/Employee/EmployeePages/SupportTicketSystem/SupportTicketSystem";
 import NotificationsPage from "./Components/Employee/EmployeeComponents/NotificationPage";
-
+import ProfilePage from  "./Components/Employee/EmployeePages/dashboard/Profile"
 
 // Admin imports
 import AdminLayout from "./Components/Admin/AdminComponents/AdminLayout";
@@ -63,7 +63,8 @@ function App() {
           <Route path="support" element={<SupportTicketSystem />} />
           <Route path="faq" element={<Faq />} />
           <Route path="notifications" element={<NotificationsPage/>} />
-
+          <Route path="profilepage" element={<ProfilePage />} />
+           
           {/* <Route path=""/> */}
         </Route>
 
