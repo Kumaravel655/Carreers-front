@@ -8,8 +8,8 @@ import {
 import "./App.css";
 
 // Login signup -> common
-import Login from "./Components/Common/LoginandSingup/Login";
-import Signup from "./Components/Common/LoginandSingup/Signup";
+import Login from "./Components/Shared/LoginandSingup/Login";
+import Signup from "./Components/Shared/LoginandSingup/Signup";
 
 // job seekers
 import Home from "./Components/Employee/EmployeeComponents/Home";
