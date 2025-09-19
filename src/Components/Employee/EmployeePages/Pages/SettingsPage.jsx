@@ -6,6 +6,8 @@ import ProfileSettings from "../../EmployeeComponents/settings/ProfileSettings";
 import SocialLinks from "../../EmployeeComponents/settings/SocialLinks";
 import AccountSettings from "../../EmployeeComponents/settings/AccountSettings";
 import styles from "../../EmployeeComponents/settings/settings.module.css";
+import Navbar from "../../EmployeeComponents/Navbar";
+import "../../EmployeeComponents/settings/settings.module.css";
 
 const SettingsPage = () => {
   const [activeTab, setActiveTab] = useState("Personal");
@@ -27,6 +29,7 @@ const SettingsPage = () => {
 
   return (
     <div className={styles.settingsLayout}>
+      <Navbar />
       <Header />
       <div className={styles.mainContainer}>
         <Sidebar />
@@ -36,9 +39,9 @@ const SettingsPage = () => {
 
             <div className={styles.tabNavbar}>
               <button
-                className={`${styles.tabButton} ${
+                className={ `${styles.tabButton} ${
                   activeTab === "Personal" ? styles.active : ""
-                }`}
+                }` }
                 onClick={() => setActiveTab("Personal")}
               >
                 Personal

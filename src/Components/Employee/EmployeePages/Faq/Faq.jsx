@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import Navbar from "../../EmployeeComponents/Navbar";
 import "./Faq.css";
 
 const faqData = [
@@ -97,7 +98,9 @@ const Faq = () => {
   let itemCounter = 0;
 
   return (
-    <div className="faq-container">
+    <>
+      <Navbar/>
+      <div className="faq-container">
       {faqData.map((section, sectionIndex) => (
         <div key={sectionIndex} className="faq-section">
           <h3>{section.category}</h3>
@@ -116,6 +119,7 @@ const Faq = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 

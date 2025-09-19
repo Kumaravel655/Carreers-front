@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "./jobAlerts.module.css";
 import { FaBookmark, FaArrowRight, FaPencilAlt } from "react-icons/fa";
+import Navbar from "../Navbar";
 
 const JobAlertsList = ({ alerts }) => {
   return (
+    <>
+    
     <div className={styles.jobAlertsList}>
+    
       <div className={styles.listHeader}>
         <h2 className={styles.listTitle}>
           Job Alerts <span className={styles.newBadge}>(new jobs)</span>
@@ -53,6 +57,7 @@ const JobAlertsList = ({ alerts }) => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

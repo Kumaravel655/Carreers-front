@@ -1,3 +1,37 @@
+/* CommonStyles.module.css */
+
+/* ===== Buttons ===== */
+.saveButton {
+  background-color: #007bff; /* Bootstrap blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.saveButton:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+.cancelButton {
+  background-color: #6c757d; /* Gray */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cancelButton:hover {
+  background-color: #5a6268;
+}
+
+/* ===== Layout ===== */
 .settingsLayout {
   display: flex;
   flex-direction: column;
@@ -22,6 +56,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
+/* ===== Titles ===== */
 .settingsTitle {
   font-size: 1.5rem;
   font-weight: 600;
@@ -29,7 +64,15 @@
   color: #1a1a2e;
 }
 
-/* Tab Navigation */
+.sectionTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* ===== Tabs ===== */
 .tabNavbar {
   display: flex;
   border-bottom: 2px solid #eee;
@@ -53,14 +96,7 @@
   border-color: #007bff;
 }
 
-/* Form Styles */
-.sectionTitle {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-}
-
+/* ===== Forms ===== */
 .formContainer {
   padding-bottom: 2rem;
 }
@@ -81,7 +117,8 @@
   margin-bottom: 0.5rem;
 }
 
-.formGroup input, .formGroup select {
+.formGroup input,
+.formGroup select {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ddd;
@@ -89,6 +126,7 @@
   font-size: 1rem;
 }
 
+/* Upload Box */
 .uploadBox {
   border: 2px dashed #ddd;
   border-radius: 8px;
@@ -96,9 +134,14 @@
   text-align: center;
   color: #888;
   cursor: pointer;
+  transition: border-color 0.3s ease;
 }
 
-/* Resume Cards */
+.uploadBox:hover {
+  border-color: #007bff;
+}
+
+/* ===== Resume Section ===== */
 .resumeList {
   display: flex;
   gap: 1.5rem;
@@ -112,6 +155,11 @@
   padding: 1.5rem;
   text-align: center;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.addResumeCard:hover {
+  border-color: #007bff;
 }
 
 .resumeCard {
@@ -124,4 +172,295 @@
   position: relative;
 }
 
-/* ... and so on for all the other styles like social links, password fields, etc. */
+
+/*------------------------------------------*/
+.formContainer {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs li {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #555;
+}
+
+.tabs li:hover {
+  color: #007bff;
+}
+
+.active {
+  border-bottom: 2px solid #007bff;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.formGroupFull {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroupFull textarea {
+  resize: none;
+}
+
+
+/*---------------------------------------*/
+/* ==== FORM ROW & GROUP ==== */
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.formGroup input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+}
+
+/* ==== INPUT WITH ICON ==== */
+.inputWithIcon {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  background-color: #fff;
+}
+
+.inputWithIcon svg {
+  margin-right: 8px;
+  color: #888;
+}
+
+.inputWithIcon input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+/* ==== NOTIFICATION CHECKBOXES ==== */
+.notificationOptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ==== PRIVACY SWITCH ==== */
+.privacyRow {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.privacyToggle {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider {
+  background-color: #007bff;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+/* ==== DELETE ACCOUNT ==== */
+.deleteWarning {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.closeAccountButton {
+  background: none;
+  color: red;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+/* ==== SOCIAL LINKS ==== */
+.socialRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.selectBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem;
+  background: #fff;
+  flex: 0 0 180px;
+}
+
+.selectBox select {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 0.95rem;
+  background: transparent;
+  margin-left: 6px;
+}
+
+.urlInput {
+  flex: 1;
+  padding: 0.65rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.removeButton:hover {
+  color: red;
+}
+
+.addButton {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+  background: #f8f9fa;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.addButton:hover {
+  background: #eef1f5;
+}
+

@@ -115,15 +115,7 @@
   border-color: #dee2e6;
 }
 
-/* Navbar */
-.j > nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 100px;
-  background-color: #b0b0b0;
-  border-bottom: 1px solid #ddd;
-}
+
 
 .j i {
   color: #552929;

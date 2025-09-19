@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import JobData from "./jobs.json";
 import JobList from "./JobList";
 import "./JobDesc.css";
+import Navbar from "../../../EmployeeComponents/Navbar";
 
 const DetailList = ({ title, details }) => {
   const items = details.split(". ").filter((item) => item.trim() !== "");
@@ -37,13 +38,8 @@ const JobDesc = () => {
 
   return (
     <div className=" j">
-      <nav>
-        Job Details
-        <div>
-          <Link to="/job-seeker/">Home</Link>/<Link to="/job-seeker/findjob">Jobs</Link> /{" "}
-          <i>Job Details</i>
-        </div>
-      </nav>
+      <Navbar/>
+        
 
       <div className="card shadow-sm mt-4 container my-5">
         <div className="card-header p-4 bg-light">

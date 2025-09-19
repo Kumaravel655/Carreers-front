@@ -4,6 +4,7 @@ import Sidebar from "../common/Sidebar";
 import JobAlertsList from "./JobAlertsList";
 import Pagination from "../../EmployeePages/Pages/Pagination";
 import styles from "./jobAlerts.module.css";
+import Navbar from "../Navbar";
 
 const JobAlertsPage = () => {
   const jobAlertsData = [
@@ -44,6 +45,7 @@ const JobAlertsPage = () => {
 
   return (
     <div className={styles.jobAlertsLayout}>
+      <Navbar/>
       <Header />
       <div className={styles.mainContainer}>
         <Sidebar />
