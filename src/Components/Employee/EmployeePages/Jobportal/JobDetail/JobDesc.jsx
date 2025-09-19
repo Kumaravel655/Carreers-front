@@ -64,7 +64,7 @@ const JobDesc = () => {
               </div>
             </div>
             <div>
-              <button className="btn btn-primary">Apply Now</button>
+              <Link to="apply-job"><button className="btn btn-primary">Apply Now</button></Link>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ const JobDesc = () => {
           <DetailList title="Qualifications" details={job.qualifications} />
           <DetailList title="Benefits" details={job.benefits} />
           <div className="text-center mt-4">
-            <button className="btn btn-outline-primary">Apply Now</button>
+              <Link to="apply-job"><button className="btn btn-primary">Apply Now</button></Link>
           </div>
         </div>
       </div>

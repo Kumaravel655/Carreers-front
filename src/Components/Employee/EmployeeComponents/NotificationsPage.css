@@ -1,0 +1,66 @@
+/* Style for the main container of the notifications page */
+.notifications-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the page title */
+.notifications-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+}
+
+/* Style for the list of notifications */
+.notifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for each individual notification item */
+.notification-item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notification-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the notification title */
+.notification-item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+/* Style for the notification message content */
+.notification-item p {
+  margin: 0;
+  color: #555;
+}
+
+/* Style for the notification date/timestamp */
+.notification-date {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.5rem;
+  align-self: flex-end;
+}

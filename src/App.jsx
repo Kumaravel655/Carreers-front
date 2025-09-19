@@ -14,6 +14,7 @@ import Signup from "./Components/Shared/LoginandSingup/Signup";
 // job seekers
 import Home from "./Components/Employee/EmployeeComponents/Home";
 import FindJob from "./Components/Employee/EmployeePages/Jobportal/FindJob/FindJob";
+import ApplyJob from "./Components/Employee/EmployeeComponents/Applyjob/Applyjob";
 import JobDesc from "./Components/Employee/EmployeePages/Jobportal/JobDetail/JobDesc";
 import DashboardPage from "./Components/Employee/EmployeePages/dashboard/DashboardPage";
 import AppliedJobsPage from "./Components/Employee/EmployeePages/Pages/AppliedJobsPage";
@@ -22,6 +23,8 @@ import FavoriteJobsPage from "./Components/Employee/EmployeeComponents/favoriteJ
 import SettingsPage from "./Components/Employee/EmployeePages/Pages/SettingsPage";
 import Faq from "./Components/Employee/EmployeePages/Faq/Faq";
 import SupportTicketSystem from "./Components/Employee/EmployeePages/SupportTicketSystem/SupportTicketSystem";
+import NotificationsPage from "./Components/Employee/EmployeeComponents/NotificationPage";
+
 
 // Admin imports
 import AdminLayout from "./Components/Admin/AdminComponents/AdminLayout";
@@ -56,8 +59,11 @@ function App() {
           <Route path="favorite-jobs" element={<FavoriteJobsPage />} />
           <Route path="findjob" element={<FindJob />} />
           <Route path="jobs/:jobId" element={<JobDesc />} />
+          <Route path="jobs/:jobId/apply-job" element={<ApplyJob />} />
           <Route path="support" element={<SupportTicketSystem />} />
           <Route path="faq" element={<Faq />} />
+          <Route path="notifications" element={<NotificationsPage/>} />
+
           {/* <Route path=""/> */}
         </Route>
 

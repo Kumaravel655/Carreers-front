@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { FaRegBell } from "react-icons/fa"; // Import the bell icon
 
 const Navbar = () => {
   return (
@@ -18,6 +19,13 @@ const Navbar = () => {
         <li>
           <Link to="/job-seeker/faq">FAQ</Link>
         </li>
+        <li>
+                  <Link to="/job-seeker/notifications" className="notification-icon">
+                    <FaRegBell size={20} />
+                    {/* You can add a notification count here later */}
+                    <span className="notification-badge">3</span>
+                  </Link>
+                </li>
 
       </ul>
     </nav>
