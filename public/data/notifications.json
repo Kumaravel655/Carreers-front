@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "message": "Priya Sharma applied for UI/UX Designer.",
+    "time": "2 hours ago",
+    "read": false
+  },
+  {
+    "id": 2,
+    "message": "Your job post 'Senior UX Designer' is about to expire.",
+    "time": "1 day ago",
+    "read": false
+  },
+  {
+    "id": 3,
+    "message": "Arjun Verma sent you a message regarding his application.",
+    "time": "3 days ago",
+    "read": true
+  },
+  {
+    "id": 4,
+    "message": "You have 5 new applicants for 'Technical Support Specialist'.",
+    "time": "3 days ago",
+    "read": true
+  }
+]

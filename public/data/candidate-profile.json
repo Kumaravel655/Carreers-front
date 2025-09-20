@@ -1,0 +1,38 @@
+{
+  "id": 101,
+  "name": "Priya Sharma",
+  "avatarUrl": "https://i.pravatar.cc/150?img=1",
+  "headline": "Senior UI/UX Designer at TechSolutions Inc.",
+  "location": "Bengaluru, Karnataka",
+  "email": "priya.sharma@example.com",
+  "phone": "+91 98765 43210",
+  "resumeUrl": "/path/to/resume.pdf",
+  "summary": "A highly creative and detail-oriented Senior UI/UX Designer with over 8 years of experience in crafting engaging and user-centric digital experiences. Proven ability to lead design projects from concept to launch, collaborating effectively with cross-functional teams to deliver intuitive and visually appealing products.",
+  "workExperience": [
+    {
+      "id": 1,
+      "title": "Senior UI/UX Designer",
+      "company": "TechSolutions Inc.",
+      "period": "Jan 2021 - Present",
+      "description": "Lead the design of a new flagship mobile application, resulting in a 40% increase in user engagement. Mentor junior designers and establish new design system guidelines."
+    },
+    {
+      "id": 2,
+      "title": "UX Designer",
+      "company": "Innovate Digital",
+      "period": "Jun 2017 - Dec 2020",
+      "description": "Conducted user research, created wireframes, and developed interactive prototypes for various client websites and applications."
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "National Institute of Design",
+      "degree": "Master of Design (M.Des), Interaction Design",
+      "period": "2015 - 2017"
+    }
+  ],
+  "skills": [
+    "Figma", "Sketch", "Adobe XD", "User Research", "Prototyping", "Wireframing", "Design Systems", "HTML/CSS", "Usability Testing"
+  ]
+}

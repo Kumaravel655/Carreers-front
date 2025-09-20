@@ -1,0 +1,38 @@
+[
+  {
+    "id": 101,
+    "name": "Priya Sharma",
+    "avatarUrl": "https://i.pravatar.cc/150?img=1",
+    "headline": "Senior UI/UX Designer at TechSolutions Inc.",
+    "location": "Bengaluru",
+    "skills": ["Figma", "Sketch", "User Research", "Prototyping"],
+    "experience": "Senior"
+  },
+  {
+    "id": 102,
+    "name": "Arjun Verma",
+    "avatarUrl": "https://i.pravatar.cc/150?img=2",
+    "headline": "Full Stack Developer at Innovate Digital",
+    "location": "Mumbai",
+    "skills": ["React", "Node.js", "MongoDB", "JavaScript"],
+    "experience": "Mid-level"
+  },
+  {
+    "id": 103,
+    "name": "Sneha Reddy",
+    "avatarUrl": "https://i.pravatar.cc/150?img=3",
+    "headline": "Junior DevOps Engineer",
+    "location": "Bengaluru",
+    "skills": ["Docker", "Kubernetes", "AWS", "CI/CD"],
+    "experience": "Entry-level"
+  },
+  {
+    "id": 104,
+    "name": "Rohan Gupta",
+    "avatarUrl": "https://i.pravatar.cc/150?img=4",
+    "headline": "Product Manager at Fintech Corp",
+    "location": "Delhi",
+    "skills": ["Agile", "Roadmap Planning", "JIRA", "Market Research"],
+    "experience": "Senior"
+  }
+]

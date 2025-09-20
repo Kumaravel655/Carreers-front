@@ -1,0 +1,42 @@
+[
+  {
+    "id": 101,
+    "jobId": 1,
+    "name": "Priya Sharma",
+    "avatarUrl": "https://i.pravatar.cc/150?img=1",
+    "appliedDate": "2025-09-18",
+    "status": "New"
+  },
+  {
+    "id": 102,
+    "jobId": 1,
+    "name": "Arjun Verma",
+    "avatarUrl": "https://i.pravatar.cc/150?img=2",
+    "appliedDate": "2025-09-17",
+    "status": "Shortlisted"
+  },
+  {
+    "id": 103,
+    "jobId": 2,
+    "name": "Sneha Reddy",
+    "avatarUrl": "https://i.pravatar.cc/150?img=3",
+    "appliedDate": "2025-09-16",
+    "status": "New"
+  },
+  {
+    "id": 104,
+    "jobId": 1,
+    "name": "Rohan Gupta",
+    "avatarUrl": "https://i.pravatar.cc/150?img=4",
+    "appliedDate": "2025-09-15",
+    "status": "Interview"
+  },
+  {
+    "id": 105,
+    "jobId": 3,
+    "name": "Ananya Desai",
+    "avatarUrl": "https://i.pravatar.cc/150?img=5",
+    "appliedDate": "2025-09-14",
+    "status": "Rejected"
+  }
+]
